@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+
+    <video width="560" height="315" poster="imagens/limoes-capa.png" preload="metadata" controls>
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Infelizmente o seu navegador não reproduz video. <a href="midia/meu-video.mp4">Clique aqui para fazer o download do arquivo.</a></p>
+
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <p>Este video esta hospedado no servidor do youtube <!--Videos hospedados em servidores locais acabam consumindo muita banda de download. Opte sempre por hospedar seus videos em servidores externos como por exemplo o yt, pois o custo de hospedagem para o seu cliente passa a ser 0 -->
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do vimeo</h1> <!-- Uma das vantagens do vimeo sao: a qualidade do video, e a permição de poder tomar seus videos upados la privados, sendo acessados somente pelo seu site, exemplo: um site de cursos que possui video aulas. Para que o video nao seja hospedado localmente e o consumo de bandas nao seja muito alto, o video sera hospedado no servidor externo (vimeo nesse caso) e somente os alunos desse curso poderão ter acesso a esses videos. Uma das desvantagens é o seu DECODER, podendo gerar algumas travadas no video na hora da reprodução, fazendo assim com que precise ter uma boa internet.-->
+    <p>Este video foi inserido do vimeo</p>
+    <iframe src="https://player.vimeo.com/video/90500446?h=937c754c34&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

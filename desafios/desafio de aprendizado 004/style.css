@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #40E68B, #1A5C38);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+}
+
+.subtitulo{
+    height: 80px;
+    width: 600px;
+    margin: auto;
+    font-size: medium;
+    color: white;
+
+}
+
+nav{
+    color: white;
+}
+
